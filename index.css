@@ -1,0 +1,28 @@
+[data-expand] {
+  display: block;
+}
+
+main {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 1s, visibility 1s;
+  visibility: hidden;
+  overflow: hidden;
+}
+
+[aria-expanded="true"] + main {
+  grid-template-rows: 1fr;
+  visibility: visible;
+}
+
+article {
+  min-height: 0;
+}
+
+div {
+  display: none;
+}
+
+[aria-expanded="true"] + div {
+  display: block;
+}

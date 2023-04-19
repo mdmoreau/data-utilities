@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>data-utilities</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <h1>expand</h1>
+    <button data-expand>expand</button>
+    <main>
+      <article>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti ratione maxime, saepe pariatur ipsum totam suscipit, vero ipsa, quae laborum mollitia quidem sunt ducimus?</p>
+        <p>Ullam aliquid, <a href="#">necessitatibus</a> ex accusantium aperiam blanditiis quod eligendi, rerum nobis iste adipisci saepe placeat error beatae iusto quos temporibus! Quae provident quas suscipit.</p>
+        <p>Voluptatem non veritatis asperiores impedit inventore dicta expedita? <a href="#">Sequi illum</a>, alias ipsa est, excepturi dolorem temporibus magnam consequatur quasi consectetur veritatis dignissimos ad ullam?</p>
+        <p>Harum ducimus nemo eum quisquam minus labore esse unde qui, ullam officia sint necessitatibus corporis nihil ad veniam quod ut possimus pariatur quis debitis.</p>
+      </article>
+    </main>
+    <hr>
+    <section data-expand-tabs>
+      <button data-expand="tab">tab</button>
+      <div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti ratione maxime, saepe pariatur ipsum totam suscipit, vero ipsa, quae laborum mollitia quidem sunt ducimus?</p>
+        <p>Ullam aliquid, necessitatibus ex accusantium aperiam blanditiis quod eligendi, rerum nobis iste adipisci saepe placeat error beatae iusto quos temporibus! Quae provident quas suscipit.</p>
+        <p>Voluptatem non veritatis asperiores impedit inventore dicta expedita? Sequi illum, alias ipsa est, excepturi dolorem temporibus magnam consequatur quasi consectetur veritatis dignissimos ad ullam?</p>
+        <p>Harum ducimus nemo eum quisquam minus labore esse unde qui, ullam officia sint necessitatibus corporis nihil ad veniam quod ut possimus pariatur quis debitis.</p>
+      </div>
+      <button data-expand="tab">tab</button>
+      <div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti ratione maxime, saepe pariatur ipsum totam suscipit, vero ipsa, quae laborum mollitia quidem sunt ducimus?</p>
+        <p>Ullam aliquid, necessitatibus ex accusantium aperiam blanditiis quod eligendi, rerum nobis iste adipisci saepe placeat error beatae iusto quos temporibus! Quae provident quas suscipit.</p>
+        <p>Voluptatem non veritatis asperiores impedit inventore dicta expedita? Sequi illum, alias ipsa est, excepturi dolorem temporibus magnam consequatur quasi consectetur veritatis dignissimos ad ullam?</p>
+        <p>Harum ducimus nemo eum quisquam minus labore esse unde qui, ullam officia sint necessitatibus corporis nihil ad veniam quod ut possimus pariatur quis debitis.</p>
+      </div>
+      <button data-expand="tab">tab</button>
+      <div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti ratione maxime, saepe pariatur ipsum totam suscipit, vero ipsa, quae laborum mollitia quidem sunt ducimus?</p>
+        <p>Ullam aliquid, necessitatibus ex accusantium aperiam blanditiis quod eligendi, rerum nobis iste adipisci saepe placeat error beatae iusto quos temporibus! Quae provident quas suscipit.</p>
+        <p>Voluptatem non veritatis asperiores impedit inventore dicta expedita? Sequi illum, alias ipsa est, excepturi dolorem temporibus magnam consequatur quasi consectetur veritatis dignissimos ad ullam?</p>
+        <p>Harum ducimus nemo eum quisquam minus labore esse unde qui, ullam officia sint necessitatibus corporis nihil ad veniam quod ut possimus pariatur quis debitis.</p>
+      </div>
+    </section>
+    <hr>
+    <section>
+      <button data-expand="popup" data-expand-name="popup">popup</button>
+      <div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti ratione maxime, saepe pariatur ipsum totam suscipit, vero ipsa, quae laborum mollitia quidem sunt ducimus?</p>
+        <p>Ullam aliquid, <a href="#">necessitatibus</a> ex accusantium aperiam blanditiis quod eligendi, rerum nobis iste adipisci saepe placeat error beatae iusto quos temporibus! Quae provident quas suscipit.</p>
+        <p>Voluptatem non veritatis asperiores impedit inventore dicta expedita? <a href="#">Sequi illum</a>, alias ipsa est, excepturi dolorem temporibus magnam consequatur quasi consectetur veritatis dignissimos ad ullam?</p>
+        <p>Harum ducimus nemo eum quisquam minus <a href="#">labore esse</a> unde qui, ullam officia sint necessitatibus corporis nihil ad veniam quod ut possimus pariatur quis debitis.</p>
+      </div>
+    </section>
+    <hr>
+    <p>Lorem ipsum dolor, sit amet consectetur <a href="#">adipisicing</a> elit. Reiciendis ipsum dolorum rem tenetur, voluptatibus aut? Eveniet pariatur at vitae suscipit quam voluptatem natus vero.</p>
+    <script type="module">
+      import expand from './expand';
+
+      const expands = document.querySelectorAll('[data-expand]');
+
+      for (const target of expands) {
+        expand(target);
+      }
+    </script>
+  </body>
+</html>
