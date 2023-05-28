@@ -1,2 +1,3 @@
-declare function expand(trigger: Element);
+declare function expand(trigger: Element): void;
+
 export = expand;
