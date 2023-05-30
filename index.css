@@ -5,6 +5,8 @@
 /* expand */
 
 div {
+  --height: initial;
+
   height: var(--height, 0);
   visibility: hidden;
   transition: 1s ease;
